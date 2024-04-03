@@ -10,3 +10,43 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 100px;
+    color: lightgrey;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgrey;
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+h1 {text-align: center;}
+
+input {
+    border: none; 
+    width: 100%;
+    outline: none;
+}
+
+.contenedor li i {
+    float: right;
+}
+
+.counter {
+    margin-top: 10px;
+    font-size: 20px;
+}

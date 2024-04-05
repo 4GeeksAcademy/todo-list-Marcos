@@ -8,23 +8,26 @@ const Home = () => {
 	const [inputValue, setInputValue] = useState("")
 	const [todos, setTodos] = useState([])
 
-
 	return (
 		<div className="container">
-			<h1>My Todos</h1>
+			<h1>Mis Tareas</h1>
 			<ul>
 				<input 
-						type="text"
+						type="text" placeholder="¿Qué necesitas hacer?"
 						onChange={e => setInputValue(e.target.value)}
 						value={inputValue}
 						onKeyDown={e => {
 							if (e.key === "Enter") {
-								todos.push(inputValue);
-								console.log(todos)
-								setInputValue("");
+								if(inputValue.trim().length >= 3){
+									todos.push(inputValue);
+									console.log(todos)
+									setInputValue("");
+								}else {
+									alert("Por favor, escriba alguna tarea.")
+								}
 							}
 						}}
-						placeholder="What do you need to do?"/>
+						/>
 
 				{todos.map((item, index) => {
 					return (
@@ -36,7 +39,7 @@ const Home = () => {
 					)
 				})}
 			</ul>
-			<div className="counter">{todos.length} task</div>
+			<div className="counter">{todos.length} tareas</div>
 		</div>
 	);
 };

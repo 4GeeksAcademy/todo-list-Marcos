@@ -26,10 +26,7 @@ ul {
 }
 
 ul li {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid lightgrey;
+    border: 1px solid lightgrey;
     list-style: none;
     padding: 10px;
     font-size: 20px;
@@ -50,4 +47,8 @@ input {
 .counter {
     margin-top: 10px;
     font-size: 20px;
+}
+
+.one .two {
+    border: 1px solid lightgrey;
 }

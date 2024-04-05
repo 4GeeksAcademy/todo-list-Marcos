@@ -40,7 +40,10 @@ const Home = () => {
 				})}
 			</ul>
 			<div className="counter">{todos.length} tareas</div>
+			<div className="one"></div>
+			<div className="two"></div>
 		</div>
+
 	);
 };
 

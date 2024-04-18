@@ -11,7 +11,7 @@ const Home = () => {
 	return (
 		<div className="container">
 			<h1>Mis Tareas</h1>
-			<ul>
+			<ul className="paper">
 				<input 
 						type="text" placeholder="¿Qué necesitas hacer?"
 						onChange={e => setInputValue(e.target.value)}
